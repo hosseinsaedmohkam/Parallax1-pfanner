@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pfanner</title>
+  <link rel="stylesheet" href="src/style/master.css">
+  <link rel="stylesheet" href="src/style/output.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ////////////////////////////////// HEADER//////////////////////////////// -->
+  <header id="mainHeader"
+    class="fixed top-0 left-0 w-full h-[280px] z-50 transition-transform duration-500 overflow-visible">
+    <!-- موج و بلاب‌ها -->
+    <div class="absolute inset-0">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 280" preserveAspectRatio="none"
+        class="absolute top-0 left-0 w-full h-[260px] lg:h-[280px] -z-10">
+        <!-- موج اصلی -->
+        <path fill="#ffffff" fill-opacity="1"
+          d="M0,0H1920V96.28c-61.52-18.09-123.64-36.68-188-41A375.83,375.83,0,0,0,1659,57.39C1610.89,63.26,1563.62,76,1515,77c-28.09.6-56-3.54-83.6-8.2-8.71-1.31-17.33-3.32-26.1-4.13-24.48-4.69-49.35-7.81-74.29-8-42.36-.49-84.18,8-125.19,17.74-50.91,12.37-101,28-152.31,38.74C1024,119.32,994.15,124,964,125c-13.39-.07-26.8.42-40.17-.6-41.59-2.73-82.51-11.57-122.71-22.25C757.29,90.45,714.07,76.51,670.2,64.9c-44.53-11.72-90-21.11-136.22-22.2-27.56-.82-55.06,2.18-82.21,6.67C410.07,56.11,368.45,65.59,326,65.24,270,64.71,215.9,47.18,160.06,45.1,106.23,42.9,52.8,51.83,0,61.19Z">
+        </path>
+        <!-- بلاب‌ها -->
+        <path fill="#ffffff" class="float-blob blob1"
+          d="M115.12,66.12a48.52,48.52,0,0,1,29.63,4.09,26.35,26.35,0,0,1,13.82,18.72c1.54,9-1.78,18.24-7,25.55-8.16,11.37-20.65,19.24-34,22.94-9.86,2.67-20.62,3.23-30.32-.34-9.34-2.5-17.35-10.1-19.42-19.67-1.89-7.72.68-15.63,4-22.56C80.69,79.17,97.59,69.07,115.12,66.12Z">
+        </path>
+        <path fill="#ffffff" class="float-blob blob2"
+          d="M1707.13,81.18a309.33,309.33,0,0,1,35.9-.25c21.55,2.28,43,6.88,63.18,14.77,12.36,4.92,24.51,10.77,35,19,9,6.91,17.27,14.67,25.59,22.36,12.21,11.27,7.23,35-8.61,40.26-6.77,2.59-14.14,1.71-21.21,1.89-22,.4-44-3.1-65.24-9-19.8-5.53-38.56-14.05-57.22-22.53A164.71,164.71,0,0,1,1692.92,136c-6.45-4.38-12.91-9.34-16.74-16.29a22.33,22.33,0,0,1,2-24.57C1685.44,86.82,1696.43,82.67,1707.13,81.18Z">
+        </path>
+        <path fill="#ffffff" class="float-blob blob3"
+          d="M180.1,90.16c5-1.11,9.82,2.27,12.57,6.23,4,5.5,5.09,13.59.93,19.3-2.6,3.1-7.35,3.33-10.74,1.44-6.35-3.42-10-11-9.41-18.09C173.75,95.17,176.09,91.08,180.1,90.16Z">
+        </path>
+        <path fill="#ffffff" class="float-blob blob4"
+          d="M1619.2,113.2a23.46,23.46,0,0,1,19.82,3.67c3.15,2.3,4.34,6.43,3.83,10.19a27.08,27.08,0,0,1-9.69,17.32c-4.44,3.67-10.55,4.44-16.1,3.79-5.12-.66-10.38-2.39-14.1-6.11-3.25-3-2.67-8.07-1.57-11.93A30.05,30.05,0,0,1,1619.2,113.2Z">
+        </path>
+      </svg>
+    </div>
+    <!-- ناوبری -->
+    <div class="relative flex items-center justify-between w-full px-20 h-full z-10 pt-2">
+      <!-- سمت چپ -->
+      <nav class="flex items-center -mt-56 space-x-8 font-light text-teal-600 text-base md:text-lg">
+        <a href="#" class="hover:text-red-600">THE PRODUCTS</a>
+        <a href="#" class="hover:text-red-600">HOW WE MAKE THEM</a>
+        <a href="#" class="hover:text-red-600">#SUCKWITHLIFE</a>
+      </nav>
+      <!-- لوگو مرکزی -->
+      <div class="absolute left-1/2 -translate-x-1/2 lg:top-4 top-1 z-20">
+        <a href=""><img src="src/img/imgi_1_logo-main.svg" alt="Pfanner Logo" class="cursor-pointer w-36 md:w-48"></a>
+      </div>
+      <!-- سمت راست -->
+      <nav class="flex items-center -mt-56 space-x-8 font-light text-teal-600 text-base md:text-lg">
+        <a href="#" class="hover:text-red-600">Store Locator</a>
+        <a href="#" class="hover:text-red-600">CONTACTS</a>
+        <!-- سرچ -->
+        <div class="flex items-center border-2 border-teal-800 rounded-full px-3 py-1 bg-white">
+          <input type="text" class="bg-transparent focus:outline-none text-sm md:text-base w-24 md:w-44" />
+        </div>
+        <button class="-ml-5 text-teal-800 hover:scale-125 transition">
+          <i class="cursor-pointer bi bi-search text-xl"></i>
+        </button>
+      </nav>
+    </div>
+    <!-- دکمه همبرگر فقط برای موبایل -->
+    <button id="hamburger-btn" class="md:hidden absolute right-6 top-6 text-3xl text-teal-700 z-50">
+      <i class="bi bi-list"></i>
+    </button>
+    <!-- منوی تمام‌صفحه برای موبایل -->
+    <div id="mobileMenu" class="hidden">
+      <i id="closeMenu" class="bi bi-x-lg"></i>
+      <img src="src/img/imgi_1_logo-main.svg" alt="Pfanner Logo" class="w-28 mt-12 mb-8" />
+      <a href="#" class="hover:text-red-600">THE PRODUCTS</a>
+      <a href="#" class="hover:text-red-600">HOW WE MAKE THEM</a>
+      <a href="#" class="hover:text-red-600">#SUCKWITHLIFE</a>
+      <a href="#" class="hover:text-red-600">Store Locator</a>
+      <a href="#" class="hover:text-red-600">CONTACTS</a>
+      <div class="flex items-center border-2 border-teal-800 rounded-full px-3 py-1 bg-white">
+        <input type="text" class="bg-transparent focus:outline-none text-sm md:text-base w-24 md:w-44" />
+        <button class="-ml-5 text-teal-800 hover:scale-125 transition">
+          <i class="cursor-pointer bi bi-search text-xl"></i>
+        </button>
+      </div>
+      <div class="flex flex-col items-center">
+        <!-- عنوان -->
+        <h2 class="text-lg font-extralight text-teal-600 mb-2">
+          FOLLOW US ON:
+        </h2>
+        <!-- آیکون‌ها کنار هم -->
+        <div class="flex gap-4">
+          <a class="w-8 h-8 hover:scale-110 transition text-teal-600 hover:text-blue-900" href="#">
+            <i class="bi bi-facebook text-3xl"></i>
+          </a>
+          <a class="w-8 h-8 hover:scale-110 transition text-teal-600 hover:text-fuchsia-800" href="#">
+            <i class="bi bi-instagram text-3xl"></i>
+          </a>
+        </div>
+      </div>
+  </header>
+  <!-- ===== MAIN CONTENT ===== -->
+  <main
+    class="w-full min-h-screen flex flex-col items-center justify-center text-center pt-[100px] overflow-x-hidden overflow-y-visible">
+
+    <!-- ===== SECTION 1 ===== -->
+    <section
+      class="sec1 bg-[#13b599] min-h-[85vh] flex flex-col lg:flex-row items-center justify-center px-4 py-10 gap-6 w-full relative overflow-hidden">
+
+      <!-- متن -->
+      <div
+        class="relative  w-full lg:w-1/2 flex flex-col justify-center items-center lg:items-start text-center lg:text-left mt-28 lg:mt-56 lg:left-5 ">
+        <p
+          class="text-5xl sm:text-6xl md:text-7xl lg:text-[110px] text-amber-50 leading-tight lg:leading-[100px] z-10 mb-4 relative lg:left-22">
+          The drink <br> with a <br> capital P!
+        </p>
+        <!-- تصویر پس‌زمینه پایین سمت چپ -->
+        <div class="image absolute -left-10 lg:bottom-8 lg:-left-10 lg:w-72 z-0 opacity-90 ">
+          <img class="w-48  lg:w-full lg:h-auto" src="src/img/imgi_2_1625585073.2772_s-1.png" alt="">
+        </div>
+        <!-- کوه - حذف در موبایل -->
+        <div class="absolute -left-10 -bottom-24 lg:w-72 z-10 opacity-100 hidden lg:block">
+          <img class="w-full h-auto" src="src/img/imgi_4_1625585096.8676_montagne-hompegae.png" alt="">
+        </div>
+      </div>
+      <!-- تصویر سمت راست -->
+      <div class="relative w-full flex justify-center mt-4 lg:mt-32 lg:left-4  ">
+        <!-- ابر  -->
+        <figure class="image absolute  md:left-36 lg:top-4 z-0 opacity-80 lg:left-96 lg:mt-28 ">
+          <img class="ml-8 w-[480px] md:w-[520px] lg:w-[600px]" src="src/img/imgi_3_1625585080.9286_s-2.png" alt="">
+        </figure>
+        <!-- تصویر اصلی -->
+        <figure class="relative z-10 mt-2 md:mt-0  ">
+          <img
+            class="w-[450px] sm:w-[480px] md:w-[560px] lg:w-[620px] xl:w-[750px] object-contain mx-auto relative lg:mt-24 lg:left-24"
+            src="src/img/imgi_6_1724679372.3489_PFANNER_HERO_mobile_2024.png" alt="Pfanner Hero">
+        </figure>
+      </div>
+    </section>
+    <!-- موج بین سکشن‌ها (متحرک)  -->
+    <div class="wavs1 w-full relative overflow-hidden">
+      <svg width="100%" height="100%" viewBox="0 0 1440 300" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#f5d739" fill-opacity="1"
+          d="M0,40 C88,60 176,80 305,60 C433,40 601,20 748,30 C895,40 1020,60 1132,50 C1244,40 1342,60 1440,40"
+          class="transition-all duration-300 ease-in-out delay-150 path-0">
+        </path>
+      </svg>
+    </div>
+    <!-- ===== SECTION 2 ===== -->
+    <section class="sec2 relative w-full overflow-hidden 
+         flex flex-col lg:flex-row 
+         items-center justify-center px-4 py-8 lg:py-32
+         bg-[#fff8e1] lg:bg-transparent">
+      <!-- متن -->
+      <div class="text txt relative lg:left-20 mb-96 w-full lg:w-1/2 flex flex-col items-center lg:items-start 
+           text-center lg:text-left px-4 lg:order-2 z-10 order-2">
+        <h2 class="text-4xl md:text-6xl lg:text-[110px] text-teal-800 leading-tight mb-4">
+          The products
+        </h2>
+        <p class="text-teal-800 text-base md:text-2xl max-w-md mb-8 ">
+          Don't be shy, we know you're already tempted, and we're Austrians,
+          so we're warm even in winter. Check us out!
+        </p>
+        <div class="btn-container">
+          <a href="#" class="discover-btn"><span>DISCOVER US!</span></a>
+        </div>
+      </div>
+      <!-- تصویر -->
+      <div class="imgph relative w-full lg:w-1/2 flex justify-center items-center order-1 lg:order-1 mb-28">
+        <!-- عکس موبایل/تبلت -->
+        <div class="relative mt-28 w-full">
+          <!-- عکس پایین -->
+          <img src="src/img/imgi_9_1627289772.568_PFANNER_AL_SUCCO_SQUARE_MOBILE.png" alt="product image"
+            class="block lg:hidden w-auto max-w-full mx-auto object-cover object-center z-0" />
+          <!-- عکس رویی -->
+          <img src="src/img/imgi_8_1625586947.6561_nuvola-2-seconda-slide.png" alt="product image"
+            class="block lg:hidden image absolute top-0 left-0 w-[180px] object-cover object-center z-10" />
+        </div>
+        <!-- عکس دسکتاپ با ابرها -->
+        <div class="hidden  lg:flex relative w-full justify-center items-center -left-96">
+          <img src="src/img/imgi_13_1627301475.9214_s-6-succon-la-vita.png" alt=""
+            class="image w-[220px] md:w-[300px] lg:w-[400px] relative lg:right-16 bottom-12 z-10" />
+          <img src="src/img/imgi_8_1625586947.6561_nuvola-2-seconda-slide.png" alt=""
+            class="absolute image right-[10%] bottom-[-60px] w-[120px] md:w-[180px] lg:w-[220px] z-0 opacity-90" />
+        </div>
+      </div>
+    </section>
+    <!--  موج دوم بین سکشن 2 و 3  -->
+    <div class="wavs2 w-full relative overflow-hidden -mt-40">
+      <svg width="100%" height="100%" viewBox="0 60 1440 400" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#a9eae0" fill-opacity="10"
+          d="M0,400 C169,40 339,30 515,20 C691,10 873,15 1028,25 C1183,35 1312,50 1440,45"
+          class="transition-all duration-300 ease-in-out delay-150 path-0">
+        </path>
+      </svg>
+    </div>
+    <!-- ===== SECTION 3 ===== -->
+    <section class="sec3 relative flex flex-col lg:flex-row items-center justify-center 
+          px-0 lg:px-6 py-12 lg:py-32 w-full overflow-hidden
+         bg-[#fff8e1] lg:bg-transparent">
+      <!-- تصویر -->
+      <div class=" w-full lg:w-1/2 flex justify-center items-center order-1 lg:order-2">
+        <!-- عکس مخصوص موبایل (کاور بالایی سکشن) -->
+        <div class="relative">
+          <img src="src/img/imgi_11_1698762713.8341_PFANNER_COME_LI_FACCIAMO_MOBILE_2023.png"
+            alt="Pfanner Juice Production" class="block lg:hidden w-full h-[60vh] object-cover object-center z-0" />
+          <img src="src/img/imgi_13_1627301475.9214_s-6-succon-la-vita.png" alt="product image"
+            class="block lg:hidden image absolute -top-36 left-52 w-[280px] object-cover object-center z-10" />
+        </div>
+        <!-- عکس مخصوص دسکتاپ -->
+        <div class="hidden lg:flex relative w-full justify-center items-center lg:left-96 lg:-mt-[500px]">
+          <img src="src/img/imgi_13_1627301475.9214_s-6-succon-la-vita.png" alt="Pfanner Juice Production"
+            class="image w-[250px] md:w-[340px] lg:w-[440px] xl:w-[500px] relative z-10 drop-shadow-lg transition-transform duration-500 hover:scale-105" />
+        </div>
+      </div>
+      <!-- متن -->
+      <div class="text relative w-full lg:w-1/2 flex flex-col mb-28
+           items-center lg:items-start justify-center 
+           text-center lg:text-left px-6 py-2 lg:py-0 space-y-2
+           order-2 lg:order-1">
+        <h3 class="text-4xl md:text-6xl lg:text-[90px] text-teal-800 leading-[1.1]">
+          How <br> we make <br> them!
+        </h3>
+        <p class="text-teal-800 text-lg md:text-2xl max-w-xl">
+          Just as you like it — but secretly, we also take care of the pressing, pasteurization, and addition of
+          vitamins.
+        </p>
+        <div class="btn-container">
+          <a href="#" class="FIND-btn">FIND OUT MORE</a>
+        </div>
+      </div>
+    </section>
+    <!--  موج سوم بین سکشن 3 و 4  -->
+    <div class="wavs3 w-full relative overflow-hidden -mt-36">
+      <svg width="100%" height="100%" viewBox="0 60 1440 250" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#ff0049" fill-opacity="1"
+          d="M 0,250 L 0,130 C 170,125 340,120 515,110 C 691,100 873,90 1028,95 C 1183,100 1312,120 1440,130 L 1440,250 L 0,250 Z"
+          class="transition-all duration-300 ease-in-out delay-150 path-0">
+        </path>
+      </svg>
+    </div>
+    <!-- ===== SECTION 4 ===== -->
+    <section class="sec4 relative flex flex-col items-center justify-center 
+         px-6 md:px-6 pt-12 md:pt-12 pb-16 w-full 
+         min-h-[120vh] overflow-hidden bg-teal-800">
+
+      <div class="image absolute inset-0 justify-between items-center w-full pointer-events-none z-0 lg:flex">
+        <img src="src/img/imgi_13_1627301475.9214_s-6-succon-la-vita.png" alt="Left Image" class="relative lg:bottom-[400px] -translate-x-2 lg:-translate-x-40 
+             w-[200px] md:w-[280px] lg:w-[360px] xl:w-[420px] drop-shadow-xl">
+        <img src="src/img/imgi_13_1627301475.9214_s-6-succon-la-vita.png" alt="Right Image" class="relative top-44 lg:-top-44 translate-x-72 lg:translate-x-28 
+             w-[230px] md:w-[320px] lg:w-[400px] xl:w-[460px] drop-shadow-xl">
+      </div>
+      <!-- متن -->
+      <div class="text relative z-10 w-full max-w-5xl flex flex-col items-center 
+              text-center space-y-8 px-2 md:px-10">
+
+        <h3 class="text-4xl md:text-6xl lg:text-[90px] text-white leading-tight font-titan">
+          #succonlavita
+        </h3>
+        <p
+          class="text-white text-lg md:text-2xl leading-relaxed flex justify-center items-start text-center px-2 md:px-6">
+          <span class="font-bold text-2xl md:text-4xl text-white">AAA:</span>
+          <span class="max-w-3xl">
+            This section contains highly contagious traces of joy, lightheartedness, and lightheartedness.
+          </span>
+        </p>
+
+        <h4 class="text-white text-lg md:text-2xl font-normal leading-relaxed px-2 md:px-6 max-w-2xl">
+          Consume before, after, and during juices to achieve the desired effect.
+        </h4>
+
+        <div class="btn-container mt-6">
+          <a href="#" class="FIND-btn4">FIND OUT MORE</a>
+        </div>
+      </div>
+    </section>
+    <!-- موج بالای فوتر -->
+    <div class="relative bottom-0 bg-transparent">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 144.26"
+        class="w-screen wavsfoot bg-transparent fill-none">
+        <path class="fill-white"
+          d="M1920,114.9v73.37H0V114.9c38.78,4.48,133,30.42,265.56-4.17C317.94,97.32,370.24,83.6,422.8,71a526.11,526.11,0,0,1,249,2.09c52.54,13.21,104.7,28.11,156.89,42.82,60,16.91,120,33,182.5,37.87a432.08,432.08,0,0,0,98.22-3c39.83-6,79.52-12.9,119.35-18.86a340.86,340.86,0,0,1,68.31-3.27c35,1.83,69.39,8.3,103.86,14.15,27.27,4.63,54.61,8.62,82.31,9.55,51.9,1.75,103.07-4.88,154.07-13.4,57-9.51,113.58-21.21,171.25-26.16,30.94-2.66,61.9-3.17,92.86-.2C1907.66,113.17,1913.88,114.13,1920,114.9Z"
+          transform="translate(0 -44.01)"></path>
+        <!-- بلاب 1 -->
+        <ellipse class="fill-white animate-blob5" cx="1525.59" cy="91.18" rx="60.61" ry="43.64"
+          transform="translate(106.27 613.99) rotate(-25.19)"></ellipse>
+        <!-- بلاب 2 -->
+        <ellipse class="fill-white animate-blob6" cx="1616.55" cy="91.9" rx="13.48" ry="18.72"
+          transform="translate(114.62 652.77) rotate(-25.19)"></ellipse>
+      </svg>
+    </div>
+    <!-- فوتر اصلی -->
+    <footer class="footer  bg-white text-teal-600 px-6 md:px-10 py-6 relative z-10">
+      <div class="container mx-6 grid grid-cols-1 lg:grid-cols-5 gap-12 pt-2 items-center">
+        <!-- لوگو + منو -->
+        <div class="flex flex-col lg:pt-10 lg:pl-12 relative ">
+          <div class="flex justify-between lg:justify-start gap-5 lg:gap-20 items-start lg:w-[250px] ">
+            <!-- لوگو -->
+            <img src="src/img/imgi_1_logo-main.svg" alt="Pfanner Logo" class="w-44 lg:w-96">
+            <!-- منو -->
+            <ul
+              class="flex flex-col items-start space-y-0 text-sm lg:text-[18px] font-light lg:font-extralight text-left w-full lg:w-max whitespace-nowrap">
+              <li><a href="#" class="hover:text-yellow-500">HOME</a></li>
+              <li><a href="#" class="hover:text-yellow-500">THE PRODUCTS</a></li>
+              <li><a href="#" class="hover:text-yellow-500">HOW WE MAKE THEM</a></li>
+              <li><a href="#" class="hover:text-yellow-500">#SUCKWITHLIFE</a></li>
+              <li><a href="#" class="hover:text-yellow-500">Store Locator</a></li>
+              <li><a href="#" class="hover:text-yellow-500">NEWSLETTER</a></li>
+              <li><a href="#" class="hover:text-yellow-500">CONTACTS</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- فاصله وسط دسکتاپ -->
+        <div class="hidden lg:flex items-center justify-center"></div>
+        <!-- <-- اطلاعات شرکت (فقط در دسکتاپ) -->
+        <div class="hidden lg:block px-6 py-4 relative lg:left-64 lg:mt-5">
+          <h2 class="font-extralight text-lg mb-1 text-teal-600 m-0 leading-none -ml-4">
+            PFANNER ITALIA SRL
+          </h2>
+          <ul class="text-[14px] font-serif space-y-0.5 list-none text-left whitespace-nowrap">
+            <li>VAT number 02336890211</li>
+            <li>Via Albertina Brogliati 56</li>
+            <li>39012 Merano (BZ)</li>
+            <li class="hover:font-extrabold">Tel: +39 0473492100</li>
+            <li>Fax: +39 0473564872</li>
+            <li class="hover:font-extrabold">Mail: info@pfanner.it</li>
+            <li>Pec: verwaltung@pec.pfanner.it</li>
+            <li>Share capital € 100,000.00</li>
+            <li>Reg. Impr. BZ 02336890211</li>
+          </ul>
+        </div>
+        <!-- شبکه‌های اجتماعی -->
+        <div class="relative flex flex-col items-center lg:items-start lg:left-56 rounded-lg px-5 lg:pl-8 py-2">
+          <h2
+            class="text-base lg:text-lg font-extralight lg:font-extralight text-teal-600 mb-6 lg:mb-4 text-center lg:text-left">
+            FOLLOW US ON:
+          </h2>
+          <div class="flex gap-6 -mt-4 justify-center lg:justify-start">
+            <a class="w-8 h-8 hover:scale-110 transition text-teal-600 hover:text-blue-900" href="#">
+              <i class="bi bi-facebook text-3xl"></i>
+            </a>
+            <a class="w-8 h-8 hover:scale-110 transition text-teal-600 hover:text-fuchsia-800" href="#">
+              <i class="bi bi-instagram text-3xl"></i>
+            </a>
+            <a class="hidden lg:block w-8 h-8 hover:scale-110 transition text-teal-600 hover:text-teal-900" href="#">
+              <i class="bi bi-linkedin text-3xl"></i>
+            </a>
+            <a class="hidden lg:block w-8 h-8 hover:scale-110 transition text-teal-600 hover:text-teal-900" href="#">
+              <i class="bi bi-tiktok text-3xl"></i>
+            </a>
+          </div>
+          <!-- لینک‌های پایین -->
+          <ul class="hidden lg:block text-[14px] font-extralight space-y-1 text-center lg:text-left">
+            <li><a href="#" class="hover:font-semibold hover:text-yellow-500">PRIVACY POLICY</a></li>
+            <li><a href="#" class="hover:font-semibold hover:text-yellow-500">COOKIE POLICY</a></li>
+            <li><a href="#" class="hover:font-semibold hover:text-yellow-500">FAQ</a></li>
+            <li><a href="#" class="hover:font-semibold hover:text-yellow-500">WHISTLEBLOWING</a></li>
+          </ul>
+          <!-- بخش مخصوص موبایل -->
+          <div class="block lg:hidden  font-extralight text-teal-600 mt-4 w-full text-center space-y-2 -pt-6 ">
+            <div class="text-sm "> PFANNER ITALIA S.r.l-P.via 02336890211</div>
+            <div class="text-sm ">Pec: verwaltung@pec.pfanner.it</div>
+            <div class="text-sm ">Reg. Impr. BZ 02336890211</div>
+
+          </div>
+        </div>
+      </div>
+      <!-- آیکون برگشت به بالا -->
+      <div id="backToTop"
+        class="fixed right-6 bottom-10 z-50 w-14 h-14 hidden lg:flex items-center justify-center cursor-pointer">
+        <img src="src/img/imgi_14_alpaca.gif" alt="Back to top" class="w-14 h-14">
+      </div>
+    </footer>
+  </main>
+  <!-- پاپ‌آپ لاگین کناری -->
+  <div id="loginPopupContainer"
+    class=" fixed top-1/3 right-0 transform -translate-y-1/2 z-50 hidden md:flex items-center">
+    <!-- تصویر حیوان اولیه کنار صفحه -->
+    <img id="animalBtn" src="src/img/imgi_16_20250925_pfanner-italia-sticker-alpaca-pfrandubbiosa.png" alt="Animal Icon"
+      class="w-[150px] h-[150px] cursor-pointer drop-shadow-xl " />
+    <!-- فرم لاگین -->
+    <div id="loginFormContainer"
+      class="bg-white shadow-2xl rounded-2xl w-[650px] h-[450px] flex flex-row items-center p-6 absolute top-64 -translate-y-1/2 right-[-620px] transition-all duration-700 ease-in-out">
+      <!-- دکمه بستن -->
+      <button id="closeLogin"
+        class="absolute -top-2 right-0 w-10 h-10 flex items-center justify-center bg-teal-800 rounded-full text-white text-[5px]">
+        &times;
+      </button>
+      <!-- سمت چپ فرم -->
+      <div class="flex-1 flex flex-col justify-start px-4 space-y-4">
+        <h2 class="text-3xl font-extrabold text-teal-700">
+          Sign up for the <br> juiciest newsletter <br> on the web!
+        </h2>
+        <input type="text" placeholder="Name*"
+          class="border-b-2 border-teal-400 focus:outline-none focus:border-teal-600" />
+        <input type="email" placeholder="E-mail address*"
+          class="border-b-2 border-teal-400 focus:outline-none focus:border-teal-600" />
+        <div class="flex items-center space-x-2 text-teal-700">
+          <input type="checkbox" id="option1" />
+          <label for="option1" class="whitespace-nowrap">I accept Privacy Policy *</label>
+        </div>
+        <div class="flex items-center space-x-2 text-teal-700">
+          <input type="checkbox" id="option2" />
+          <label for="option2" class="whitespace-nowrap">I authorize newsletters</label>
+        </div>
+        <button class="FIND-btn py-2 font-extralight transition mt-2">
+          SUBSCRIBE
+        </button>
+      </div>
+      <!-- سمت راست فرم: تصویر حیوان داخل فرم -->
+      <div class="flex-1 relative w-[300px] h-[390px] bg-[#feeb19] rounded-xl overflow-visible ">
+        <img src="src/img/imgi_15_alpaca-dx.png" alt="Alpaca"
+          class="absolute -bottom-4 -right-2 w-[380px] h-[400px] object-cover rounded-xl " />
+      </div>
+    </div>
+  </div>
+</body>
+<script src="src/style/app.js"></script>
+
+</html>
